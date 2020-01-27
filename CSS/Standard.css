@@ -13,7 +13,13 @@ body{
     color: #333333;
 }
 
-/* Page Organizing Table */
+.wrapper{
+    min-width: 800px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Page Organizing Table OLD */
 .pagetable{
     border-collapse: collapse;
     width: 100%;
@@ -26,17 +32,12 @@ body{
     text-align: center;
     color: #FF0000;
     background-color: #333333;
-    min-width: 750px;
+    padding: 15px;
+    margin:  0px;
 }
 
-/* height fixes for table rows */
-.headerrow{
-    height: fit-content;
-}
-.navbarrow{
-    height: fit-content;
-}
-.footerrow{
+/* height fixes for divs */
+.headerrow, .navbarrow, .footerrow{
     height: fit-content;
 }
 
@@ -46,7 +47,7 @@ body{
 }
  /* Add spacer under nav bar */
 .spacerrow{
-    height: 5%;
+    height: 20px;
 }
 
 /* center align any columns */
@@ -57,7 +58,13 @@ body{
 /* Navigation Bar */
 .navbar{
     text-align: center;
-    width: 15%;
+    float: left;
+}
+
+.navbarlist{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #CCCCCC;
     margin: 0;
     padding: 0;
 }
@@ -67,36 +74,23 @@ a.navitem:link{
     text-decoration: none;
     color: #3A3A3A;
     background-color: #CCCCCC;
-    display: inline-block;
-    height:100%;
-    width:100%;
-    font-size: 20;
-    padding-top: 2;
-    padding-bottom: 2;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 a.navitem:visited{
-    text-decoration: none;
     color: #3A3A3A;
     background-color: #CCCCCC;
-    display: inline-block;
-    height:100%;
-    width:100%;
 }
 a.navitem:hover{
-    text-decoration: none;
     color: #D0D0D0;
     background-color: #555555;
-    display: inline-block;
-    height:100%;
-    width:100%;
 }
 a.navitem:active{
-    text-decoration: none;
     color: #D0D0D0;
     background-color: #555555;
-    display: inline-block;
-    height:100%;
-    width:100%;
 }
 
 /* Footer */
@@ -107,8 +101,13 @@ a.navitem:active{
 }
 
 /* image on home page */
+.portraitrow{
+    float: left;
+    margin: 5px;
+    border: groove;
+}
 .portrait{
-    width: 85%;
+    width: 300px;
     height: 300px;
 }
 .portraitholder{
