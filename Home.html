@@ -18,103 +18,76 @@
         <div class="wrapper">
             <!-- Header -->
             <div class="headerrow">
-                <h1 class="header">TITLE TBD HOME</h1>
+                <h1 class="header">Scott Lipchitz - Home</h1>
             </div>
             <!-- Nav Bar -->
-            <div class="navbarrow">
+            <div id="navbarwrapper" class="navbarrow">
                 <ul class="navbarlist">
                     <li class="navbar"><a href="Home.html" class="navitem">HOME</a></li>
                     <li class="navbar"><a href="Resume.html" class="navitem">RESUME</a></li>
                     <li class="navbar"><a href="Portfolio.html" class="navitem">PORTFOLIO</a></li>
-                    <li class="navbar"><a href="Contact.html" class="navitem">CONTACT ME</a></li>
+                    <li class="navbar"><a href="Home.html#contactID" class="navitem">CONTACT ME</a></li>
                 </ul>
             </div>
-            <div class="spacerrow">
+            <!-- <div class="spacerrow"></div> -->
+            <!-- Home Page Intro Here -->
+            <div class="informrow_home padding">
+                <div class="portraitrow">
+                    <img src="Images/portrait.jpg" alt="Portrait" class="portrait">
+                </div>
+                <div class="informrow_home vertical_top">
+                    <p>
+                        I've been a developer for over 10 years. I have worked on a variety of projects. Ranging from game developement projects I completed during my degree, a variety of web projects, embedded systems, android applications and more
+                    </p>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <!-- Resume and Portoflio Sample and Links-->
+            <div class="wrapper_job padding">
+                <div class="informrow_job vertical_top">
+                    <h2>Need a Developer?</h2>
+                    <p>
+                        Have an idea that you do not know how to start or a project that you just don't have time to finish?<br />
+                        I can get that idea out into the world
+                    </p>
+                    <!-- Portofolio Link-->
+                    <p>
+                        Check out my <a href="Portfolio.html" class="homeLinks">portfolio</a> to see some of the porjects I have completed!
+                    </p>
+                    <!-- Resume Link -->
+                    <p>
+                        Interested in hiring me?  My <a href="Resume.html" class="homeLinks">resume</a> lists my qualifications
+                    </p>
+                </div>
+            </div>
 
+                <!-- Contact Us Form -->
+            <div id="contactID" class="wrapper_contact padding">
+                <h2>Contact Me</h2>
+                <div class="informrow_contact vertical_top">
+                    <form action="" method="POST" class="contactform">
+                        <label for="" class="label_f1">First Name</label><br />
+                        <input type="text" name="" id="" class="input_f1" required><br /><br /> <!-- First Name -->
+                        <label class="label_f1" for="">Last Name</label><br />
+                        <input type="text" name="" id="" class="input_f1" required><br /><br /> <!-- Last Name -->
+                        <label class="label_f1" for="">Email</label><br />
+                        <input type="email" name="" id="" class="input_f1" required><br /><br /> <!-- Email -->
+                        <label class="label_f1" for="">Message</label><br />
+                        <textarea name="" id="" class="textarea_f1" required> </textarea><br /><br /> <!-- Message -->
+                        <div class="centerbutton"><input type="submit" value="SEND" class="sendbutton"></div>
+                    </form>
+                </div>
             </div>
-            <!-- Information Here -->
-            <div class="portraitrow">
-                <img src="Images/portrait.jpg" alt="Portrait" class="portrait">
-            </div>
-            <div class="informrow">
-                <p>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                </p>
-                <p>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </p>
-            </div>
+                
             <!-- Footer -->
             <div class="footerrow">
                 <p class="footer"> &copy; 2020 TBD Productions<br />
-                    Images from: <a href="https://www.freeimages.com/">https://www.freeimages.com/</a></p>
-
+                    Images from: <a href="https://www.freeimages.com/" class="footerLink">https://www.freeimages.com/</a></p>
             </div>
         </div>
-        <!--
-        <table class="pagetable">
-            <tr class="headerrow">
-                <td></td>
-                <td colspan="4" class="header"><h1>TITLE TBD HOME</h1></td>
-                <td></td>
-            </tr>
-
-            <tr class="navbarrow">
-                <td></td>
-                <td class="navbar"><a href="Home.html" class="navitem">HOME</a></td>
-                <td class="navbar"><a href="Resume.html" class="navitem">RESUME</a></td>
-                <td class="navbar"><a href="Portfolio.html" class="navitem">PORTFOLIO</a></td>
-                <td class="navbar"><a href="Contact.html" class="navitem">CONTACT ME</a></td>
-                <td></td>
-            </tr>
-
-            <tr class="spacerrow">
-            </tr>
-            <tr class="informrow">
-                <td></td>
-                <td colspan="2" class="portraitholder">
-                    <img src="Images/portrait.jpg" alt="Portrait" class="portrait">
-                </td>
-                <td colspan="2"> 
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                </td>
-                <td></td>
-            </tr >
-            <td></td>
-            <td colspan="4"> 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-            </td>
-            <td></td>
-        </tr >
-
-            <tr class="footerrow">
-                <td></td>
-                <td colspan="4" class="footer"> &copy; 2020 TBD Productions<br />
-                    Images from: <a href="https://www.freeimages.com/">https://www.freeimages.com/</a></td>
-                <td></td>
-            </tr>
-        </table>-->
+        <!-- Sticky Nav BAr JS-->
+        <script src="JS/stickyNavBar.js"></script>
     </body>
 </html>

@@ -14,76 +14,49 @@
         <link href="CSS/Standard.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- Using table as requested, will change later most likely-->
-        <table class="pagetable">
+        <div class="wrapper">
             <!-- Header -->
-            <tr class="headerrow">
-                <td></td>
-                <td colspan="4" class="header"><h1>TITLE TBD PORTFOLIO</h1></td>
-                <td></td>
-            </tr>
-
+            <div class="headerrow">
+                <h1 class="header">Portfolio</h1>
+            </div>
             <!-- Nav Bar -->
-            <tr class="navbarrow">
-                <td></td>
-                <td class="navbar"><a href="Home.html" class="navitem">HOME</a></td>
-                <td class="navbar"><a href="Resume.html" class="navitem">RESUME</a></td>
-                <td class="navbar"><a href="Portfolio.html" class="navitem">PORTFOLIO</a></td>
-                <td class="navbar"><a href="Contact.html" class="navitem">CONTACT ME</a></td>
-                <td></td>
-            </tr>
-
-            <!-- Information Here -->
-            <tr class="spacerrow">
-            </tr>
-            <tr class="informrow">
-                <td></td>
-                <td class="centercol">
-                    <!-- Actually link to the project -->
-                    <a href="Images/project1.png" target="_blank" class="thumbnail">
-                        <img src="Images/project1.png" alt="project1" class="thumbnailimage"></a>
-                </td>
-                <td colspan="3"> 
-                    <h3>Project 1</h3>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </td>
-                <td></td>
-            </tr>
-            <tr class="informrow">
-                <td></td>
-                <td class="centercol">
-                    <a href="Images/project2.jpg" target="_blank" class="thumbnail">
-                        <img src="Images/project2.jpg" alt="project2"  class="thumbnailimage"></a>
-                </td>
-                <td colspan="3"> 
-                    <h3>Project 2</h3>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </td>
-                <td></td>
-            </tr>
-            <tr class="informrow">
-                <td></td>
-                <td class="centercol">
-                    <a href="Images/project3.jpg" target="_blank" class="thumbnail">
-                        <img src="Images/project3.jpg" alt="project3"  class="thumbnailimage"></a>
-                </td>
-                <td colspan="3"> 
-                    <h3>Project 3</h3>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </td>
-                <td></td>
-            </tr>
-
+            <div id="navbarwrapper" class="navbarrow">
+                <ul class="navbarlist">
+                    <li class="navbar"><a href="Home.html" class="navitem">HOME</a></li>
+                    <li class="navbar"><a href="Resume.html" class="navitem">RESUME</a></li>
+                    <li class="navbar"><a href="Portfolio.html" class="navitem">PORTFOLIO</a></li>
+                    <li class="navbar"><a href="Home.html#contactID" class="navitem">CONTACT ME</a></li>
+                </ul>
+            </div>
+            <!--<div class="spacerrow"></div>-->
+            <div class="portfolioItemOdd padding">
+                <a href="Images/project1.png" target="_blank" class="thumbnail" >
+                    <img src="Images/project1.png" alt="project1" class="thumbnailimage"></a>
+                        <h3>Personal Website</h3>
+                        <p>This website!  Currently under developement, not only will it is fully developed by me, it also has link to my resume and a contact form that will let you contact me if you like my work</p>
+            </div>
+            <div class="portfolioItemEven padding">
+                <a href="Images/project2.jpg" target="_blank" class="thumbnail">
+                    <img src="Images/project2.jpg" alt="project2" class="thumbnailimage"></a>
+                        <h3>Gallery</h3>
+                        <p> This is a website made to organize and show off images. In this instance its a service that gives photographers a place to put there images online while also organizing the images into their own mini gallery. Attached to each gallery is the contact info for the photographer as well as simple contect forms so people can hire them.</p>
+            </div>
+            <div class="portfolioItemOdd padding">
+                <a href="Images/project3.jpg" target="_blank" class="thumbnail">
+                    <img src="Images/project3.jpg" alt="project3" class="thumbnailimage"></a>
+                        <h3>Project 3</h3>
+                        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+            </div>
+                
             <!-- Footer -->
-            <tr class="footerrow">
-                <td></td>
-                <td colspan="4" class="footer"> &copy; 2020 TBD Productions<br />
-                    Images from: <a href="https://www.freeimages.com/">https://www.freeimages.com/</a></td>
-                <td></td>
-            </tr>
-        </table>
+            <div class="footerrow">
+                <p class="footer"> &copy; 2020 TBD Productions<br />
+                    Images from: <a href="https://www.freeimages.com/" class="footerLink">https://www.freeimages.com/</a></p>
+
+            </div>
+        </div>
+        <!-- Sticky Nav BAr JS-->
+        <script src="JS/stickyNavBar.js"></script>
     </body>
 </html>

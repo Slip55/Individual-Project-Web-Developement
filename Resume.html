@@ -14,67 +14,92 @@
         <link href="CSS/Standard.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- Using table as requested, will change later most likely-->
-        <table class="pagetable">
+        <div class="wrapper">
             <!-- Header -->
-            <tr class="headerrow">
-                <td></td>
-                <td colspan="4" class="header"><h1>TITLE TBD RESUME</h1></td>
-                <td></td>
-            </tr>
-
+            <div class="headerrow">
+                <h1 class="header">Resume</h1>
+            </div>
             <!-- Nav Bar -->
-            <tr class="navbarrow">
-                <td></td>
-                <td class="navbar"><a href="Home.html" class="navitem">HOME</a></td>
-                <td class="navbar"><a href="Resume.html" class="navitem">RESUME</a></td>
-                <td class="navbar"><a href="Portfolio.html" class="navitem">PORTFOLIO</a></td>
-                <td class="navbar"><a href="Contact.html" class="navitem">CONTACT ME</a></td>
-                <td></td>
-            </tr>
-
-            <!-- Information Here -->
-            <tr class="spacerrow">
-            </tr>
-            <tr class="informrow">
-                <td></td>
-                <td colspan="4">
-                    <br />
-                    <h2>Summary</h2>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                    <h2>Skills</h2>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                    <h2>Work History</h2>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                    <h2>Education</h2>
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem <br />
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem <br />
-                </td>
-                <td></td>
-            </tr>
-
+            <div id="navbarwrapper" class="navbarrow">
+                <ul class="navbarlist">
+                    <li class="navbar"><a href="Home.html" class="navitem">HOME</a></li>
+                    <li class="navbar"><a href="Resume.html" class="navitem">RESUME</a></li>
+                    <li class="navbar"><a href="Portfolio.html" class="navitem">PORTFOLIO</a></li>
+                    <li class="navbar"><a href="Home.html#contactID" class="navitem">CONTACT ME</a></li>
+                </ul>
+            </div>
+            <div class="spacerrow">
+            </div>
+            <div class="resumeWrapper padding">
+                <div class="resumeItem">
+                    <h3>Qualifications Profile</h3>
+                    Organized and technically savvy Web Developer prepared to leverage related education and hands-on training to contribute to Full Stack Developement.
+                    <ul>
+                        <li>Design complete front ends using html, css, javascript and more.</li>
+                        <li>Develop software applications using well-honed programming and coding skills.</li>
+                        <li>Experience with project management methodologies to prioritize, delegate, and coordinate tasks to consistently meet deadlines. </li>
+                        <li>Performance-driven, able to excel in team-oriented and independent environments with minimal supervision.</li>
+                        <li>Effectively communicate with individuals and in groups, including delivering professional presentations.
+                            Strong knowledge of 2D and 3D design and modelling to create attractive and dynamic game imagery.</li>
+                    </ul>
+                </div>
+                <div class="resumeItem">
+                    <h4>Core Technologies</h4>
+                    <ul class="resumeTechList">
+                        <li>Environments:</li>
+                        <li>Applications:</li><br />
+                        <li>Languages:</li>
+                    </ul>
+                    <ul class="resumeTechListRight">
+                        <li>Windows, Android, Linux</li>
+                        <li>Visual Studio, Eclipse, Visual Basic, Android Studio, Unity, Flash, Microsoft Suite, Photoshop, Illustrator, Maya</li>
+                        <li>C++, C#, Java, HTML/HTML5, CSS/CSS3, PHP, JavaScript, Turing, SQL, Torque 2D, Arduino</li>
+                    </ul>
+                </div>
+                <hr class="resume_hr">
+                <div class="resumeItem">
+                    <h3>Education and Credentials</h3>
+                    <p>
+                        <Strong>Full Stack Web Development</Strong><br />
+                        Certificate in Full Stack Developemet (Ongoing)<br />
+                        York University, Toronto, Ontario 
+                    </p>
+                    <p>
+                        <Strong>Bachelor of Information Technology (BIT)</Strong><br />
+                        Major in Game Development & Entrepreneurship (2010)<br />
+                        University of Ontario Institute of Technology, Oshawa, Ontario 
+                    </p>
+                </div>
+                <hr class="resume_hr">
+                <div class="resumeItem">
+                    <h3>Professional Experience</h3>
+                    <em>Hi-Tronic Inc., Newmarket, Ontario</em><br />
+                    <em>Developer</em><br />
+                    <ul>
+                        <li>Planned and created software to control various systems including factory machines, small engines and various automotive applications using C++ and Java.</li>
+                        <ul>
+                            <li>Collect, sort and analyze information from various sensor and trigger inputs efficiently</li>
+                        </ul>
+                        <li>Developed prototype hardware to work with this software in order to test the devices in and out of the field</li>
+                        <li>Created applications to connect to the devices in order to interface and monitor them using eclipse and android studio.</li>
+                        <ul>
+                            <li>Used Java and HTML/CSS to make interfaces for devices that updated instantly</li>
+                            <li>Physical and software based interfaces had to work seamlessly</li>
+                            <li>Interface and hardware micro controller communicated wired in and with bluetooth</li>
+                        </ul>
+                        <li>Corrected and developed products on site to correct issues and setup new features</li>
+                    </ul>
+                </div>
+            </div>
+                
             <!-- Footer -->
-            <tr class="footerrow">
-                <td></td>
-                <td colspan="4" class="footer"> &copy; 2020 TBD Productions<br />
-                    Images from: <a href="https://www.freeimages.com/">https://www.freeimages.com/</a></td>
-                <td></td>
-            </tr>
-        </table>
+            <div class="footerrow">
+                <p class="footer"> &copy; 2020 TBD Productions<br />
+                    Images from: <a href="https://www.freeimages.com/" class="footerLink">https://www.freeimages.com/</a></p>
+
+            </div>
+        </div>
+        <!-- Sticky Nav BAr JS-->
+        <script src="JS/stickyNavBar.js"></script>
     </body>
 </html>

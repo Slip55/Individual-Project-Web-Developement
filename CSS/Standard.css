@@ -11,12 +11,21 @@ Using tables currently, may swap to divs and lists, which will need to be update
 body{
     font-size: 16;
     color: #333333;
+    background-image: linear-gradient(to right, lightsteelblue , lightgrey);
 }
 
 .wrapper{
     min-width: 800px;
     max-width: 800px;
     margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+.wrapper_contact{
+    display: inline-block;
+    min-width: 770px;
+    max-width: 770px;
+    background-color: lightsteelblue;
 }
 
 /* Page Organizing Table OLD */
@@ -28,10 +37,13 @@ body{
 
 /* Header */
 .header{
+    display: inline-block;
+    min-width: 770px;
+    max-width: 770px;
     vertical-align: middle;
     text-align: center;
     color: #FF0000;
-    background-color: #333333;
+    background-color: #550000;
     padding: 15px;
     margin:  0px;
 }
@@ -39,15 +51,60 @@ body{
 /* height fixes for divs */
 .headerrow, .navbarrow, .footerrow{
     height: fit-content;
+    display: inline-block;
+    min-width: 800px;
+    max-width: 800px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    min-width: 800px;
+    max-width: 800px;
+    opacity: 0.9;
 }
 
 /* align content in row to top of row */
-.informrow{
+.vertical_top{
     vertical-align: top;
+}
+.informrow_home{
+    display: inline-block;
+    min-width: 770px;
+    max-width: 770px;
+    background-color: peachpuff;
+}
+.informrow_contact{
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
 }
  /* Add spacer under nav bar */
 .spacerrow{
+    display: inline-block;
+    min-width: 770px;
+    max-width: 770px;
     height: 20px;
+}
+.wrapper_job{
+    display: inline-block;
+    min-width: 770px;
+    max-width: 770px;
+    background-color: lightgreen;
+}
+
+.homeLinks:link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #550000;
+}
+
+.homeLinks:visited{
+    color: #550000;
+}
+
+.homeLinks:hover{
+    color: #990000;
 }
 
 /* center align any columns */
@@ -62,9 +119,12 @@ body{
 }
 
 .navbarlist{
+    display: inline-block;
+    min-width: 800px;
+    max-width: 800px;
     list-style-type: none;
     overflow: hidden;
-    background-color: #CCCCCC;
+    background-color: black;
     margin: 0;
     padding: 0;
 }
@@ -72,32 +132,79 @@ body{
 /* Navigation Bar Item*/
 a.navitem:link{
     text-decoration: none;
-    color: #3A3A3A;
-    background-color: #CCCCCC;
+    color: lightgray;
+    background-color: black;
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    border: 3px black solid;
 }
 a.navitem:visited{
-    color: #3A3A3A;
-    background-color: #CCCCCC;
+    color: lightgray;
+    background-color: black;
+    border: 3px black solid;
 }
 a.navitem:hover{
-    color: #D0D0D0;
-    background-color: #555555;
+    background-color: #550000;
 }
 a.navitem:active{
-    color: #D0D0D0;
-    background-color: #555555;
+    background-color: #550000;
 }
 
+.padding{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.resume_hr{
+    width: 90%;
+    border: 2px outset darkred;
+}
+
+.resumeItem{
+    margin-left: 15px;
+}
+
+.resumeTechList{
+    margin: 0;
+    display: inline-block;
+    width: 70px;
+    vertical-align: top;
+    list-style-type: circle;
+    margin-left: 5%;
+}
+
+.resumeTechListRight{
+    margin: 0;
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    list-style-type: none;
+}
 /* Footer */
 .footer{
+    margin: 0;
     text-align: center;
-    background-color: #AAAAAA;
+    background-color: black;
     font-size: 12;
+    color: lightgray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a.footerLink:link{
+    color: rgb(221, 60, 60);
+}
+a.footerLink:hover{
+    color: rgb(221, 60, 60);
+}
+a.footerLink:visited{
+    color: rgb(221, 60, 60);
+}
+a.footerLink:active{
+    color: rgb(221, 60, 60);
 }
 
 /* image on home page */
@@ -110,42 +217,59 @@ a.navitem:active{
     width: 300px;
     height: 300px;
 }
-.portraitholder{
-    text-align: center;
+
+.portfolioItemOdd{
+    display: inline-block;
+    min-width: 770px;
+    max-width: 770px;
+    padding-top: 20px;
+    background-color: palegoldenrod;
+    height: 25%;
+}
+.portfolioItemEven{
+    display: inline-block;
+    min-width: 770px;
+    max-width: 770px;
+    padding-top: 20px;
+    background-color: paleturquoise;
+    height: 25%;
 }
 
 /* Images on portfolio page */
+a.thumbnail:link{
+    float: left;
+    padding-right: 10px;
+}
 .thumbnailimage{
     width: 130px;
     height: 150px;
 }
 .thumbnailimage:hover{
     transform: scale(2.5);
+    margin-left: 100px;
 }
 
 /* Contact Form */
-.contactform{ /* entire form */
-    padding-left: 30%;
-}
-
 .label_f1{ /* input labels */
-    font-size: 16;
-    width: 17%;
     display: inline-block;
+    font-size: 1.5em;
 }
 
 .input_f1{ /* input fields */
-    width: 25%;
     min-width: 200px;
     display: inline-block;
+    font-size: 2em;
 }
 
 .textarea_f1{ /* message text area */
-    height: 130px;
-    width: 295px;
     display: inline-block;
+    font-size: 2em;
 }
 
-.sendbutton{  /* submit button */
-    margin-left: 20%;
+.sendbutton{
+    transform: scale(1.5);
+}
+
+.centerbutton{
+    text-align: center;
 }
