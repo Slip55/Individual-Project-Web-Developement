@@ -1,45 +1,155 @@
 /*  
 Created by: Scott Lipchitz
 Date: 1/13/2020
-    
-Notes:
-Need to make new css for different sized screens (Phone, Tablet?, Large?)
-Using tables currently, may swap to divs and lists, which will need to be updated on this side as well
 */
 
-/* Standard Page Formatting and Font */
+/* ~~~~~~~~~~~~~~~ Standard Page Formatting and Font ~~~~~~~~~~~~~~~ */
 body{
-    font-size: 16;
+    font-size: 1.3em;
     color: #333333;
     background-image: linear-gradient(to right, lightsteelblue , lightgrey);
 }
 
-.wrapper{
+/* ~~~~~~~~~~~~~~~ Title Objects ~~~~~~~~~~~~~~~ */
+h2{
+    margin: 0;
+    margin-top: 10px;
+}
+h3{
+    margin: 0;
+}
+h4{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+h5{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+h6{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* ~~~~~~~~~~~~~~~ Single Adjustments ~~~~~~~~~~~~~~~ */
+
+.vertical_top{ /* align content in row to top of row */
+    vertical-align: top;
+}
+
+.padding{ /* Add padding to both sides but not top or bottom */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ~~~~~~~~~~~~~~~ Change Width to match screen size ~~~~~~~~~~~~~~~ */
+.setWidth{
     min-width: 800px;
     max-width: 800px;
+}
+.setWidthPadding{
+    min-width: 770px;
+    max-width: 770px;
+}
+
+@media screen and (max-width: 767px) {
+    /* ALL < TABLET */
+    .setWidth{
+        min-width: 500px;
+        max-width: 500px;
+    }
+    .setWidthPadding{
+        min-width: 470px;
+        max-width: 470px;
+    }
+    body{
+        font-size: 1.1em;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~ Wrappers for sections on pages ~~~~~~~~~~~~~~~ */
+.wrapper{ /* Page Wrapper */
     margin: 0 auto;
     background-color: whitesmoke;
 }
 
-.wrapper_contact{
+.headerrow, .navbarrow, .footerrow{ /* height fixes for divs */
+    height: fit-content;
     display: inline-block;
-    min-width: 770px;
-    max-width: 770px;
-    background-color: lightsteelblue;
 }
 
-/* Page Organizing Table OLD */
-.pagetable{
-    border-collapse: collapse;
-    width: 100%;
-    height: 100%;
+.wrapper_introhome{ /* Home Page Top Section */
+    display: inline-block;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* Header */
+.sticky + .wrapper_introhome { /* Prevent nav bar from gettign stuck */
+  padding-top: 60px;
+}
+
+.portraitrow{ /* Home Page Image */
+    float: left;
+    margin: 5px;
+    margin-right: 10px;
+    border: 2px #550000 groove;
+}
+
+.wrapper_job{ /* Home Page Middle Section */
+    display: inline-block;
+    border-top: 5px #550000 groove;
+    border-bottom: 5px #550000 groove;
+    background-color: cadetblue;
+}
+
+.wrapper_contact{ /* Home Page Bottom Section */
+    display: inline-block;
+    background-color: whitesmoke;
+}
+
+.wrapper_contactform{ /* Home Page Bottom Form */
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.wrapper_resume{
+    display: inline-block;
+}
+.sticky + .wrapper_resume { /* Prevent nav bar from gettign stuck */
+  padding-top: 60px;
+}
+
+.resumeItem{  /* Resume Page */
+    margin-left: 15px;
+    padding-right: 10px;
+}
+
+.portfolioItemOdd{ /* Portfolio Page Odd Sections */
+    display: inline-block;
+    padding-top: 20px;
+    background-color: whitesmoke;
+}
+.portfolioItemEven{ /* Portfolio Page Even Sections */
+    display: inline-block;
+    padding-top: 20px;
+    background-color:  cadetblue;
+    border-top: 5px #550000 groove;
+    border-bottom: 5px #550000 groove;
+}
+.sticky + .portfolioItemOdd { /* Prevent nav bar from gettign stuck */
+  padding-top: 60px;
+}
+
+/* ~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~ */
 .header{
     display: inline-block;
-    min-width: 770px;
-    max-width: 770px;
     vertical-align: middle;
     text-align: center;
     color: #FF0000;
@@ -48,80 +158,39 @@ body{
     margin:  0px;
 }
 
-/* height fixes for divs */
-.headerrow, .navbarrow, .footerrow{
-    height: fit-content;
-    display: inline-block;
-    min-width: 800px;
-    max-width: 800px;
+/* ~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~ */
+.footer{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    font-size: 12;
+    color: lightgray;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.sticky {
+/* ~~~~~~~~~~~~~~~ Navigation Bar ~~~~~~~~~~~~~~~ */
+.sticky { /* Makes navbar stick to top of page */
     position: fixed;
     top: 0;
     min-width: 800px;
     max-width: 800px;
     opacity: 0.9;
 }
-
-/* align content in row to top of row */
-.vertical_top{
-    vertical-align: top;
-}
-.informrow_home{
-    display: inline-block;
-    min-width: 770px;
-    max-width: 770px;
-    background-color: peachpuff;
-}
-.informrow_contact{
-    width: fit-content;
-    padding: 10px;
-    margin: 0 auto;
-}
- /* Add spacer under nav bar */
-.spacerrow{
-    display: inline-block;
-    min-width: 770px;
-    max-width: 770px;
-    height: 20px;
-}
-.wrapper_job{
-    display: inline-block;
-    min-width: 770px;
-    max-width: 770px;
-    background-color: lightgreen;
+@media screen and (max-width: 767px) {
+    .sticky { /* Makes navbar stick to top of page */
+        min-width: 500px;
+        max-width: 500px;
+    }
 }
 
-.homeLinks:link{
-    text-decoration: none;
-    font-weight: bold;
-    color: #550000;
-}
-
-.homeLinks:visited{
-    color: #550000;
-}
-
-.homeLinks:hover{
-    color: #990000;
-}
-
-/* center align any columns */
-.centercol{
-    text-align: center;
-}
-
-/* Navigation Bar */
-.navbar{
+.navbar{  /* Nav Bar List Items */
     text-align: center;
     float: left;
 }
 
-.navbarlist{
+.navbarlist{  /* Nav Bar List */
     display: inline-block;
-    min-width: 800px;
-    max-width: 800px;
     list-style-type: none;
     overflow: hidden;
     background-color: black;
@@ -129,7 +198,8 @@ body{
     padding: 0;
 }
 
-/* Navigation Bar Item*/
+/* ~~~~~~~~~~~~~~~ Links ~~~~~~~~~~~~~~~ */
+/* Navigation Bar Links*/
 a.navitem:link{
     text-decoration: none;
     color: lightgray;
@@ -153,123 +223,110 @@ a.navitem:active{
     background-color: #550000;
 }
 
-.padding{
-    padding-left: 15px;
-    padding-right: 15px;
+ /* Links on home Page */
+.homeLinks:link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #550000;
 }
 
-.resume_hr{
+.homeLinks:visited{
+    color: #550000;
+}
+
+.homeLinks:hover{
+    color: #990000;
+}
+
+/* Links in footer */
+a.footerLink:link{
+   color: rgb(221, 60, 60);
+}
+a.footerLink:hover{
+   color: rgb(221, 60, 60);
+}
+a.footerLink:visited{
+   color: rgb(221, 60, 60);
+}
+a.footerLink:active{
+   color: rgb(221, 60, 60);
+}
+
+.resume_hr{  /* Seperators for resume page */
     width: 90%;
-    border: 2px outset darkred;
+    border: 2px outset #550000;
 }
 
-.resumeItem{
-    margin-left: 15px;
-}
-
-.resumeTechList{
+.resumeTechList{ /* Left Side of list on resume page */
     margin: 0;
     display: inline-block;
-    width: 70px;
+    width: 100px;
     vertical-align: top;
     list-style-type: circle;
     margin-left: 5%;
 }
 
-.resumeTechListRight{
+.resumeTechListRight{ /* Left Side of list on resume page */
     margin: 0;
     display: inline-block;
     width: 500px;
     vertical-align: top;
     list-style-type: none;
 }
-/* Footer */
-.footer{
-    margin: 0;
-    text-align: center;
-    background-color: black;
-    font-size: 12;
-    color: lightgray;
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+@media screen and (max-width: 767px) {
+    .resumeTechList{ /* Left Side of list on resume page */
+        width: 70px;
+        margin-left: 5%;
+    }
+    
+    .resumeTechListRight{ /* Left Side of list on resume page */
+        width: 200px;
+    }
 }
 
-a.footerLink:link{
-    color: rgb(221, 60, 60);
+/* ~~~~~~~~~~~~~~~ Images ~~~~~~~~~~~~~~~ */
+.portrait{ /* Portrait on Home Page*/
+    width: 235px;
+    height: 283px;
 }
-a.footerLink:hover{
-    color: rgb(221, 60, 60);
-}
-a.footerLink:visited{
-    color: rgb(221, 60, 60);
-}
-a.footerLink:active{
-    color: rgb(221, 60, 60);
-}
-
-/* image on home page */
-.portraitrow{
-    float: left;
-    margin: 5px;
-    border: groove;
-}
-.portrait{
-    width: 300px;
-    height: 300px;
-}
-
-.portfolioItemOdd{
-    display: inline-block;
-    min-width: 770px;
-    max-width: 770px;
-    padding-top: 20px;
-    background-color: palegoldenrod;
-    height: 25%;
-}
-.portfolioItemEven{
-    display: inline-block;
-    min-width: 770px;
-    max-width: 770px;
-    padding-top: 20px;
-    background-color: paleturquoise;
-    height: 25%;
-}
-
-/* Images on portfolio page */
-a.thumbnail:link{
-    float: left;
-    padding-right: 10px;
-}
-.thumbnailimage{
+.thumbnailimage{ /* Thumbnails on Portfolio page */
     width: 130px;
     height: 150px;
 }
-.thumbnailimage:hover{
+.thumbnailimage:hover{ /* Hover fpr thumbnails on Portfolio page */
     transform: scale(2.5);
     margin-left: 100px;
 }
 
-/* Contact Form */
+a.thumbnail:link{/* Links for thumbnails on Portfolio page */
+    float: left;
+    padding-right: 10px;
+}
+
+/* ~~~~~~~~~~~~~~~ Contact Form ~~~~~~~~~~~~~~~ */
 .label_f1{ /* input labels */
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .input_f1{ /* input fields */
     min-width: 200px;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
 .textarea_f1{ /* message text area */
+    min-width: 320px;
+    height: 4em;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
-.sendbutton{
+.sendbutton{ /* Send button */
     transform: scale(1.5);
 }
 
-.centerbutton{
+.centerbutton{ /* Send Button Holder */
     text-align: center;
 }
