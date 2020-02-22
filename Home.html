@@ -9,6 +9,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <link href="CSS/Standard.css" rel="stylesheet" type="text/css">
+        <script src="JS/formVerify.js"></script>
     </head>
     <body>
         <div class="wrapper setWidth">
@@ -66,14 +67,22 @@
                 <div class="wrapper_contactform vertical_top">
                     <form target="_top" action="mailto:scott_lipchitz@hotmail.com" method="post" enctype="text/plain" class="contactform">
                         <label class="label_f1" for="fn">First Name</label><br />
-                        <input type="text" name="fn" id="fn_contact" class="input_f1" required><br /><br /> <!-- First Name -->
+                        <input type="text" name="fn" id="fn_contact" class="input_f1" required><br /><!-- First Name -->
+                        <label><b><span id="fnameLabel"></span></b></label><br /><br /> <!-- First Name Error Message -->
                         <label class="label_f1" for="ln">Last Name</label><br />
-                        <input type="text" name="ln" id="ln_contact" class="input_f1" required><br /><br /> <!-- Last Name -->
+                        <input type="text" name="ln" id="ln_contact" class="input_f1" required><br /> <!-- Last Name -->
+                        <label><b><span id="lnameLabel"></span></b></label><br /><br /> <!-- Last Name Error Message -->
                         <label class="label_f1" for="email">Email</label><br />
-                        <input type="email" name="email" id="email_contact" class="input_f1" required><br /><br /> <!-- Email -->
+                        <input type="email" name="email" id="email_contact" class="input_f1" required><br /> <!-- Email -->
+                        <label><b><span id="emailLabel"></span></b></label><br /><br /> <!-- Email Error Message -->
                         <label class="label_f1" for="message">Message</label><br />
-                        <textarea name="message" id="message_contact" class="textarea_f1" required> </textarea><br /><br /> <!-- Message -->
-                        <div class="centerbutton"><input type="submit" value="SEND" class="sendbutton"></div>
+                        <textarea name="message" id="message_contact" class="textarea_f1" required></textarea><br /> <!-- Message -->
+                        <label><b><span id="messageLabel"></span></b></label><br /><br /> <!-- Message Error Message -->
+                        <div class="centerbutton"><input type="submit" value="SEND" class="sendbutton" 
+                            onclick="checkForm(document.getElementById('fn_contact').value,
+                                                document.getElementById('ln_contact').value,
+                                                document.getElementById('email_contact').value,
+                                                document.getElementById('message_contact').value)"></div>
                     </form>
                 </div>
             </div>

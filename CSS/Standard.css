@@ -35,6 +35,9 @@ h6{
     font-weight: bold;
     font-size: 1em;
 }
+span{
+    color: #B90000;
+}
 
 /* ~~~~~~~~~~~~~~~ Single Adjustments ~~~~~~~~~~~~~~~ */
 
@@ -300,6 +303,19 @@ a.footerLink:active{
 }
 
 a.thumbnail:link{/* Links for thumbnails on Portfolio page */
+    float: left;
+    padding-right: 10px;
+}
+.thumbnail_long{ /* Thumbnails on Portfolio page */
+    width: 180px;
+    height: 120px;
+}
+.thumbnail_long:hover{ /* Hover fpr thumbnails on Portfolio page */
+    transform: scale(2.5);
+    margin-left: 100px;
+}
+
+a.thumbnail_long:link{/* Links for thumbnails on Portfolio page */
     float: left;
     padding-right: 10px;
 }
